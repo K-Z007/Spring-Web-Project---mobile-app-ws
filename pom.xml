@@ -86,10 +86,11 @@
 		</dependency>
 
 		<!-- This needs to disable when running project in this IDE  -->
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-tomcat</artifactId>-->
-<!--			<scope>provided</scope>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 			<!-- "provided" This indicates that the dependency is not required for running and using this project,
 			but is necessary for compiling and testing1. When you package your application,
 			the provided dependencies are not included in the final package (like a JAR or WAR file)
@@ -100,7 +101,7 @@ to a standalone Tomcat server1.-->
 <!--		However, when you’re running the application locally (for example, through your IDE or using mvn spring-boot:run),
 the Tomcat libraries might not be available because they’re not bundled with the application due to the provided scope.
 This could lead to the java.lang.ClassNotFoundException: javax.servlet.ServletContext error that you’re seeing-->
-<!--		</dependency>-->
+
 
 
 		<!-- Following 1 package is for testing	-->
